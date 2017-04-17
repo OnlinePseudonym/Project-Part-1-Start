@@ -12,6 +12,32 @@ I've left some boilerplate below for you.
 
 */
 
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 3em;
+  text-shadow: 3px 3px 3px #aaa;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+@media only screen and (min-width:480px) {
+  h1 {
+    display: inline;
+  }
+}
+@media only screen and (max-width:479px) {
+  h1 {
+    display: none;
+  }
+}
+
 body {
   display: block;
   margin: auto;
@@ -23,15 +49,30 @@ article {
 }
 
 h1 {
-  text-align: center;
+  padding: 1em;
 }
 
 h2 {
-  color: dark-green;
+  color: grey;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 img {
   max-width: 100%;
   display: block;
   margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 5em;
+  text-shadow: 3px 3px 3px #aaa;
 }
